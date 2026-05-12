@@ -10,7 +10,7 @@ import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
-import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
+import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import TextAbout from '@/components/sections/about/TextAbout';
 import { Award, Coffee, Leaf, Star } from "lucide-react";
 
@@ -133,15 +133,15 @@ export default function LandingPage() {
         {
           id: "p1",          name: "San Sebastian Cheesecake",          price: "Günübirlik",          variant: "Ev Yapımı",          imageSrc: "http://img.b2bpic.net/free-photo/easter-coffee-decorations-still-life_23-2150244122.jpg"},
         {
-          id: "p2",          name: "Özel Harman Kahve",          price: "Barista Seçimi",          variant: "Taze Çekirdek",          imageSrc: "http://img.b2bpic.net/free-photo/glass-coffee-unique-shaped-glass-served-with-milk-syrup_140725-6905.jpg"},
+          id: "p2",          name: "Özel Harman Kahve",          price: "Barista Seçimi",          variant: "Taze Çekirdek",          imageSrc: "http://img.b2bpic.net/glass-coffee-unique-shaped-glass-served-with-milk-syrup_140725-6905.jpg"},
         {
-          id: "p3",          name: "Alman Pastası",          price: "Geleneksel",          variant: "Ev Yapımı",          imageSrc: "http://img.b2bpic.net/free-photo/cup-coffee-plant-table_140725-8127.jpg"},
+          id: "p3",          name: "Alman Pastası",          price: "Geleneksel",          variant: "Ev Yapımı",          imageSrc: "http://img.b2bpic.net/cup-coffee-plant-table_140725-8127.jpg"},
         {
           id: "p4",          name: "Ev Yapımı Limonata",          price: "Serinletici",          variant: "Doğal",          imageSrc: "http://img.b2bpic.net/hot-chocolate_74190-7656.jpg"},
         {
-          id: "p5",          name: "Ağlayan Pasta",          price: "Favori",          variant: "Özel",          imageSrc: "http://img.b2bpic.net/free-photo/closeup-classic-fresh-espresso-served-dark-surface_1220-5376.jpg"},
+          id: "p5",          name: "Ağlayan Pasta",          price: "Favori",          variant: "Özel",          imageSrc: "http://img.b2bpic.net/closeup-classic-fresh-espresso-served-dark-surface_1220-5376.jpg"},
         {
-          id: "p6",          name: "Özel Kurabiyeler",          price: "Taze",          variant: "İkramlık",          imageSrc: "http://img.b2bpic.net/free-photo/cup-coffee-table-grey-background_1220-7312.jpg"},
+          id: "p6",          name: "Özel Kurabiyeler",          price: "Taze",          variant: "İkramlık",          imageSrc: "http://img.b2bpic.net/cup-coffee-table-grey-background_1220-7312.jpg"},
       ]}
       title="Sevilen Lezzetlerimiz"
       description="Damak çatlatan lezzetlerimizi yerinde deneyimleyin."
@@ -170,23 +170,16 @@ export default function LandingPage() {
   </div>
 
   <div id="testimonials" data-section="testimonials">
-      <TestimonialCardTwelve
-      useInvertedBackground={false}
-      testimonials={[
-        {
-          id: "t1",          name: "Hilal ÜNAL",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-smiling-asian-girl-barista-giving-out-order-cafe-inviting-guest-pick-up-takeaway-o_1258-138307.jpg"},
-        {
-          id: "t2",          name: "Eren Çelik",          imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-pale-brunette-girl-with-charming-smile-gently-holding-cup-coffee_197531-6751.jpg"},
-        {
-          id: "t3",          name: "Yeşim Uzun",          imageSrc: "http://img.b2bpic.net/free-photo/smiley-friends-cafe-enjoying-their-time_23-2148735439.jpg"},
-        {
-          id: "t4",          name: "Cemre Atmaca",          imageSrc: "http://img.b2bpic.net/free-photo/positive-young-woman-with-curly-hair-giggles-happily-holds-disposable-cup-coffee-enjoys-aromatic-beverage-dressed-casual-orange-jumper-isolated-white-background-drinking-concept_273609-61071.jpg"},
-        {
-          id: "t5",          name: "Fırat Batur",          imageSrc: "http://img.b2bpic.net/free-photo/smiling-hipster-man-reading-book-cafe_329181-2047.jpg"},
+      <TestimonialCardFifteen
+      testimonial="Harika bir atmosfer, kahveler gerçekten çok lezzetli!"
+      rating={5}
+      author="Hilal ÜNAL"
+      avatars={[
+        { src: "http://img.b2bpic.net/free-photo/portrait-smiling-asian-girl-barista-giving-out-order-cafe-inviting-guest-pick-up-takeaway-o_1258-138307.jpg", alt: "Customer" }
       ]}
-      cardTitle="Misafirlerimizin Kaleminden"
-      cardTag="Yorumlar"
-      cardAnimation="slide-up"
+      ratingAnimation="slide-up"
+      avatarsAnimation="slide-up"
+      useInvertedBackground={false}
     />
   </div>
 
